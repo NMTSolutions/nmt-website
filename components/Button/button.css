@@ -1,0 +1,122 @@
+.btn {
+  padding: 0.25rem;
+
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  height: 2.25rem;
+  min-width: 6rem;
+
+  border: none;
+  border-radius: 0.25rem;
+
+  color: #ffffff;
+  font-weight: 500;
+  font-size: medium;
+
+  cursor: pointer;
+
+  transition: background 50ms ease-in 50;
+}
+
+.btn-primary {
+  background: #815dff;
+}
+
+.btn-text {
+  background: transparent;
+
+  color: #000000;
+}
+
+.btn-outlined {
+  color: #967fff;
+
+  background: transparent;
+
+  outline: 3px solid #c9bbff;
+}
+
+.btn-sm {
+  height: 1.5rem;
+  min-width: 4rem;
+
+  border-radius: 0.15rem;
+
+  font-weight: 400;
+  font-size: small;
+}
+
+.btn-lg {
+  height: 3rem;
+  min-width: 8rem;
+
+  border-radius: 0.35rem;
+
+  font-weight: 500;
+  font-size: large;
+}
+
+.btn:hover {
+  outline: 3px solid #c9bbff;
+}
+
+.btn-text:hover {
+  background: #e0e0e0;
+
+  outline-color: #f2f2f2;
+}
+
+.btn-outlined:hover {
+  background: #e4deff;
+
+  outline-color: #b4a5f0;
+}
+
+.btn-sm:hover {
+  outline-width: 2px;
+}
+
+.btn-primary:active {
+  background: #6343d8;
+
+  outline-color: #b4a5f0;
+}
+
+.btn-text:active {
+  background: #cecece;
+
+  outline-color: #e4e4e4;
+}
+
+.btn-outlined:active {
+  background: #cec4ff;
+
+  outline-color: #a090e1;
+}
+
+.btn:disabled {
+  color: #a7a7a7;
+
+  cursor: auto;
+}
+
+.btn-primary:disabled {
+  background: #cecece;
+
+  outline: none;
+}
+
+.btn-text:disabled:hover {
+  background: transparent;
+
+  outline: none;
+}
+
+.btn-outlined:disabled {
+  outline-color: #cecece;
+}
+
+.btn-outlined:disabled:hover {
+  background: transparent;
+}
