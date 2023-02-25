@@ -16,7 +16,7 @@
 
   cursor: pointer;
 
-  transition: background 50ms ease-in 50;
+  transition: all 200ms ease-in;
 }
 
 .btn-primary {
@@ -57,7 +57,7 @@
   font-size: large;
 }
 
-.btn:hover {
+.btn-primary:hover {
   outline: 3px solid #c9bbff;
 }
 
