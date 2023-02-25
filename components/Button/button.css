@@ -26,15 +26,15 @@
 .btn-text {
   background: transparent;
 
-  color: #000000;
+  color: #815dff;
 }
 
 .btn-outlined {
-  color: #967fff;
+  color: #815dff;
 
   background: transparent;
 
-  outline: 3px solid #c9bbff;
+  outline: 1px solid #815dff;
 }
 
 .btn-sm {
@@ -68,9 +68,9 @@
 }
 
 .btn-outlined:hover {
-  background: #e4deff;
+  background: #efebff;
 
-  outline-color: #b4a5f0;
+  outline: 1px solid #c9bbff;
 }
 
 .btn-sm:hover {
@@ -90,9 +90,7 @@
 }
 
 .btn-outlined:active {
-  background: #cec4ff;
-
-  outline-color: #a090e1;
+  background: #dbd3ff;
 }
 
 .btn:disabled {
