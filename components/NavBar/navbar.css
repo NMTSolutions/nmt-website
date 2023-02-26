@@ -1,0 +1,41 @@
+.nav {
+  margin: 2rem auto;
+  padding: 0 2rem;
+
+  max-width: 90rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-heading {
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-heading img {
+  height: 2rem;
+  width: 9rem;
+
+  cursor: pointer;
+}
+
+.nav-tabs > * + button,
+.nav-account-actions > * + button {
+  margin-left: 1rem;
+}
+
+.nav-tabs button > a {
+  text-decoration: none;
+
+  display: inline-block;
+
+  color: inherit;
+
+  height: 100%;
+  width: 100%;
+}

@@ -4,3 +4,67 @@
 
   box-sizing: border-box;
 }
+
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  background: rgb(27, 22, 106);
+
+  overflow: scroll;
+}
+
+.banner {
+  margin: 2rem auto;
+
+  display: flex;
+
+  max-width: 90rem;
+}
+
+.banner > * {
+  margin: 2rem;
+  width: 50%;
+  height: 30rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner > :nth-child(1) {
+  align-items: start;
+}
+
+.banner-heading div:nth-child(1) {
+  color: white;
+  font-size: xx-large;
+
+  margin-bottom: 1rem;
+}
+
+.banner-heading div:nth-child(2) {
+  color: orange;
+  font-size: medium;
+
+  margin-bottom: 1rem;
+}
+
+.banner-heading .banner-actions > * + button {
+  margin-left: 1rem;
+}
+
+.banner-graphic img {
+  height: 100%;
+  width: 100%;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

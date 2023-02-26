@@ -2,9 +2,9 @@ import React from "react";
 import "./button.css";
 
 export interface ButtonProps {
-  label: string;
-  size: "sm" | "md" | "lg";
-  variant: "primary" | "text" | "outlined";
+  label?: string;
+  size?: "sm" | "md" | "lg";
+  variant?: "primary" | "text" | "outlined";
   disabled?: boolean;
   color?: string;
   height?: number | string;
@@ -12,6 +12,7 @@ export interface ButtonProps {
   margin?: number | string;
   padding?: number | string;
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
+  children?: React.ReactNode;
 }
 
 export interface ButtonCustomStyles {
@@ -29,13 +30,14 @@ const Button = ({
   label,
   size = "md",
   variant = "primary",
-  disabled,
+  disabled = false,
   color,
   height,
   width,
   margin,
   padding,
   onClick,
+  children,
 }: ButtonProps) => {
   const getCssClasses = () => {
     return `btn btn-${variant} btn-${size}` + (disabled ? " btn-disabled" : "");
@@ -77,7 +79,7 @@ const Button = ({
       onClick={onClick}
       disabled={disabled ?? false}
     >
-      {label}
+      {children ? children : label}
     </button>
   );
 };

@@ -1,0 +1,41 @@
+.contact-us {
+  margin: 2rem auto;
+  padding: 0 2rem;
+
+  display: flex;
+
+  max-width: 90rem;
+
+  color: #815dff;
+}
+
+.contact-us > * {
+  width: 50%;
+}
+
+.contact-us h1 {
+  margin-bottom: 1rem;
+
+  font-size: xx-large;
+
+  color: #fff;
+}
+
+.contact-us article {
+  font-size: larger;
+}
+
+.contact-us article a {
+  margin-top: 1rem;
+
+  display: block;
+
+  color: #fff;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.contact-us article a:hover {
+  text-decoration: underline;
+}

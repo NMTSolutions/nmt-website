@@ -1,0 +1,33 @@
+.container {
+  height: 100vh;
+  width: 100vw;
+
+  background: rgb(27, 22, 106);
+
+  overflow: scroll;
+}
+
+.privacy-policy {
+  margin: 2rem auto;
+  padding: 2rem;
+
+  color: #815dff;
+
+  max-width: 90rem;
+}
+
+.privacy-policy section h1 {
+  font-size: xx-large;
+
+  margin: 2rem 0;
+}
+
+.privacy-policy section h4 {
+  font-size: large;
+}
+
+.privacy-policy section h3 a {
+  text-decoration: underline;
+
+  color: #fff;
+}
