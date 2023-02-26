@@ -6,7 +6,7 @@ export interface ButtonProps {
   size: "sm" | "md" | "lg";
   variant: "primary" | "text" | "outlined";
   disabled?: boolean;
-  background?: string;
+  color?: string;
   height?: number | string;
   width?: number | string;
   margin?: number | string;
@@ -16,6 +16,9 @@ export interface ButtonProps {
 
 export interface ButtonCustomStyles {
   background?: string;
+  borderColor?: string;
+  outlineColor?: string;
+  color?: string;
   height?: number | string;
   width?: number | string;
   margin?: number | string;
@@ -27,7 +30,7 @@ const Button = ({
   size = "md",
   variant = "primary",
   disabled,
-  background,
+  color,
   height,
   width,
   margin,
@@ -40,8 +43,16 @@ const Button = ({
 
   const getCustomStyles = () => {
     const styles: ButtonCustomStyles = {};
-    if (background) {
-      styles.background = background;
+    if (color) {
+      if (variant === "primary") {
+        styles.background = color;
+        styles.outlineColor = "skyblue";
+      } else if (variant === "outlined") {
+        styles.outlineColor = color;
+        styles.color = color;
+      } else if (variant === "text") {
+        styles.color = color;
+      }
     }
     if (height || height === 0) {
       styles.height = typeof height === "number" ? height + "px" : height;
