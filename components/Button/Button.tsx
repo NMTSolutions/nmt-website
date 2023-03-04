@@ -1,9 +1,9 @@
 import React from "react";
 import "./button.css";
 
-export interface ButtonProps {
+export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   label?: string;
-  size?: "sm" | "md" | "lg";
+  viewSize?: "sm" | "md" | "lg";
   variant?: "primary" | "text" | "outlined";
   disabled?: boolean;
   color?: string;
@@ -28,7 +28,7 @@ export interface ButtonCustomStyles {
 
 const Button = ({
   label,
-  size = "md",
+  viewSize = "md",
   variant = "primary",
   disabled = false,
   color,
@@ -38,9 +38,12 @@ const Button = ({
   padding,
   onClick,
   children,
+  ...props
 }: ButtonProps) => {
   const getCssClasses = () => {
-    return `btn btn-${variant} btn-${size}` + (disabled ? " btn-disabled" : "");
+    return (
+      `btn btn-${variant} btn-${viewSize}` + (disabled ? " btn-disabled" : "")
+    );
   };
 
   const getCustomStyles = () => {
@@ -78,6 +81,7 @@ const Button = ({
       className={getCssClasses()}
       onClick={onClick}
       disabled={disabled ?? false}
+      {...props}
     >
       {children ? children : label}
     </button>

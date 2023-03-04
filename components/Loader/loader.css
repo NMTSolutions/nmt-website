@@ -2,10 +2,10 @@
   height: 2rem;
   width: 2rem;
 
-  border: 5px solid #cecece;
+  border: 5px solid var(--disabled);
   border-radius: 50%;
 
-  border-top: 5px solid #815dff;
+  border-top: 5px solid var(--secondary);
 
   animation: spin 1s linear infinite;
 }
@@ -32,7 +32,7 @@
   fill: none;
   stroke-width: 5px;
   stroke-linecap: square;
-  stroke: #815dff;
+  stroke: var(--secondary);
 
   animation: animate-stroke 1.5s ease-in-out infinite;
 }
@@ -62,7 +62,7 @@
   width: 8rem;
   height: 0.75rem;
 
-  background: #cecece;
+  background: var(--disabled);
 
   position: relative;
 
@@ -76,7 +76,7 @@
 
   border-radius: 50px;
 
-  background: #815dff;
+  background: var(--secondary);
 
   position: absolute;
   left: 0;

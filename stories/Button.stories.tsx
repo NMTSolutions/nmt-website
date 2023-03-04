@@ -33,40 +33,40 @@ export const PrimaryButton = Template.bind({});
 PrimaryButton.args = {
   label: "Primary",
   variant: "primary",
-  size: "md",
+  viewSize: "md",
 };
 
 export const TextButton = Template.bind({});
 TextButton.args = {
   label: "Text",
   variant: "text",
-  size: "md",
+  viewSize: "md",
 };
 
 export const OutlinedButton = Template.bind({});
 OutlinedButton.args = {
   label: "Outlined",
   variant: "outlined",
-  size: "md",
+  viewSize: "md",
 };
 
 export const SmallButton = Template.bind({});
 SmallButton.args = {
   label: "Small",
   variant: "primary",
-  size: "sm",
+  viewSize: "sm",
 };
 
 export const MediumButton = Template.bind({});
 MediumButton.args = {
   label: "Medium",
   variant: "primary",
-  size: "md",
+  viewSize: "md",
 };
 
 export const LargeButton = Template.bind({});
 LargeButton.args = {
   label: "Large",
   variant: "primary",
-  size: "lg",
+  viewSize: "lg",
 };

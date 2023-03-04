@@ -6,7 +6,7 @@
 
   max-width: 90rem;
 
-  color: #815dff;
+  color: var(--secondary);
 }
 
 .contact-us > * {
@@ -18,7 +18,7 @@
 
   font-size: xx-large;
 
-  color: #fff;
+  color: var(--accent);
 }
 
 .contact-us article {
@@ -30,7 +30,7 @@
 
   display: block;
 
-  color: #fff;
+  color: var(--accent);
   text-decoration: none;
 
   cursor: pointer;

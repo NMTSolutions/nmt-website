@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
 
-  background: rgb(27, 22, 106);
+  background: var(--primary);
 
   overflow: scroll;
 }
@@ -11,7 +11,7 @@
   margin: 2rem auto;
   padding: 2rem;
 
-  color: #815dff;
+  color: var(--secondary);
 
   max-width: 90rem;
 }
@@ -29,5 +29,5 @@
 .terms section h3 a {
   text-decoration: underline;
 
-  color: #fff;
+  color: var(--accent);
 }

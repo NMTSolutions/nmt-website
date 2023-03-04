@@ -77,7 +77,10 @@ const PrivacyPolicy = () => {
             encouraged to do so through the settings in your profile in the
             applicable platform or if you wish to raise a complaint /question on
             how we have handled your personal data, you can contact at{" "}
-            <a href="mailto: nanomacrotech.solutions@gmail.com">Email</a>.
+            <a href="mailto: nanomacrotech.solutions@gmail.com">
+              nanomacrotech.solutions@gmail.com
+            </a>
+            .
           </h3>
         </section>
       </section>

@@ -10,7 +10,7 @@
 }
 
 .nav-heading {
-  color: #fff;
+  color: var(--accent);
 
   display: flex;
   justify-content: center;
