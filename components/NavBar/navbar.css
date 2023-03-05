@@ -42,3 +42,32 @@
   height: 100%;
   width: 100%;
 }
+
+.signin-form + * {
+  margin-top: 2.5rem;
+}
+
+.signup-form > * {
+  display: flex;
+  gap: 1rem;
+}
+
+.signup-form + * {
+  margin-top: 0.5rem;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+}
+
+.terms > input[type="checkbox"] {
+  height: 3rem;
+
+  cursor: pointer;
+}
+.terms > label {
+  color: var(--secondary);
+
+  cursor: pointer;
+}

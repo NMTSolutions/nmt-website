@@ -6,11 +6,34 @@ import Image from "next/image";
 import Button from "../Button/Button";
 import NMTLogo from "@/assets/logo/nmt-logo.svg";
 import Link from "next/link";
+import Dialog from "../Dialog/Dialog";
 
 import "./navbar.css";
+import { useState } from "react";
+import TextField from "../TextField/TextField";
+import CheckboxInput from "../Input/CheckboxInput";
+import RadioInput from "../Input/RadioInput";
 
 const NavBar = () => {
+  const [isSigninFormOpen, setSigninFormOpen] = useState(false);
+  const [isSignupFormOpen, setSignupFormOpen] = useState(false);
   const pathname = usePathname();
+
+  const openSigninForm = () => {
+    setSigninFormOpen(true);
+  };
+
+  const closeSigninForm = () => {
+    setSigninFormOpen(false);
+  };
+
+  const openSignupForm = () => {
+    setSignupFormOpen(true);
+  };
+
+  const closeSignupForm = () => {
+    setSignupFormOpen(false);
+  };
 
   return (
     <nav className="nav">
@@ -37,9 +60,66 @@ const NavBar = () => {
         </Button>
       </div>
       <div className="nav-account-actions">
-        <Button variant="text">Login</Button>
-        <Button>Sign Up</Button>
+        <Button variant="text" onClick={openSigninForm}>
+          Login
+        </Button>
+        <Button onClick={openSignupForm}>Sign Up</Button>
       </div>
+      <Dialog
+        open={isSigninFormOpen}
+        heading="Login"
+        content={
+          <div className="signin-form">
+            <div className="signin-form username">
+              <TextField label="Username or Email" height="3rem" type="email" />
+            </div>
+            <div className="signin-form password">
+              <TextField label="Password" height="3rem" type="password" />
+            </div>
+          </div>
+        }
+        action="Login"
+        onClose={closeSigninForm}
+        onCancel={closeSigninForm}
+      />
+      <Dialog
+        open={isSignupFormOpen}
+        heading="Register"
+        content={
+          <div className="signup-form">
+            <div className="signup-form username">
+              <TextField label="Full Name" height="3rem" type="text" />
+              <TextField label="Username" height="3rem" type="text" />
+            </div>
+            <div className="signup-form email">
+              <TextField label="Email" height="3rem" type="email" />
+              <TextField label="Confirm Email" height="3rem" type="email" />
+            </div>
+            <div className="signup-form password">
+              <TextField label="Password" height="3rem" type="email" />
+              <TextField label="Confirm Password" height="3rem" type="email" />
+            </div>
+            <div className="dob">
+              <TextField
+                label="Date of Birth"
+                type="text"
+                onFocus={(event) => {
+                  event.target.type = "date";
+                }}
+                onBlur={(event) => {
+                  event.target.type = "text";
+                }}
+              />
+            </div>
+            <div className="terms">
+              <CheckboxInput label="I accept the Terms & Conditions By Signing up." />
+            </div>
+          </div>
+        }
+        action="Register"
+        onClose={closeSignupForm}
+        onCancel={closeSignupForm}
+      />
     </nav>
   );
 };

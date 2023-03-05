@@ -18,6 +18,8 @@
   --dark: rgb(0, 0, 0);
   --dark-active: rgb(0, 0, 0, 0.4);
   --dark-inactive: rgb(0, 0, 0, 0.2);
+
+  --dialog-background: rgb(22, 18, 85);
 }
 
 * {

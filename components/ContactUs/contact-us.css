@@ -46,7 +46,7 @@
   background: var(--dark-inactive);
   border-radius: 2rem;
 
-  box-shadow: 0 2px 8px var(--dark);
+  box-shadow: 0 2px 4px var(--dark);
 }
 
 .get-in-touch .name-group,
