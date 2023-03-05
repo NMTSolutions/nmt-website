@@ -1,0 +1,21 @@
+:root {
+  --primary: rgb(27, 22, 106);
+  --secondary: rgb(129, 93, 255);
+  --accent: rgb(255, 255, 255);
+  --warning: rgb(255, 165, 0);
+
+  --active: rgb(99, 67, 216);
+  --active-outline: rgb(180, 165, 240);
+
+  --hover: rgb(201, 187, 255);
+  --outline-hover: rgb(201, 187, 255);
+
+  --disabled: rgb(206, 206, 206);
+  --disabled-text: rgb(167, 167, 167);
+
+  --shadow: rgb(128, 128, 128, 0.4);
+
+  --dark: rgb(0, 0, 0);
+  --dark-active: rgb(0, 0, 0, 0.4);
+  --dark-inactive: rgb(0, 0, 0, 0.2);
+}

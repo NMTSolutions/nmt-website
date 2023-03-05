@@ -1,5 +1,5 @@
 .textfield {
-  margin: 1rem auto;
+  margin: 1rem 0;
 
   width: 100%;
 
@@ -16,6 +16,8 @@
   top: 50%;
   left: 0;
   z-index: 0;
+
+  color: var(--secondary);
 
   transform: translateY(-50%);
 
@@ -62,7 +64,7 @@
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 2px solid var(--shadow);
 }
 
 .textfield-filled > input:focus,
@@ -76,7 +78,7 @@
 
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid var(--accent);
+  border-bottom: 2px solid var(--shadow);
 }
 
 .textfield-standard > input:focus,

@@ -1,6 +1,8 @@
 import Loader, { LoaderProps } from "@/components/Loader/Loader";
 import { Meta, Story } from "@storybook/react";
 
+import "./stories.css";
+
 export default {
   title: "Components/Loaders",
   component: Loader,
