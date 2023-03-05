@@ -36,7 +36,7 @@
 }
 
 .btn-sm {
-  height: 1.5rem;
+  min-height: 1.5rem;
   min-width: 4rem;
 
   border-radius: 0.15rem;

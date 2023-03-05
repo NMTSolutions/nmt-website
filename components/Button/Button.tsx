@@ -77,8 +77,8 @@ const Button = ({
 
   return (
     <button
-      style={{ ...getCustomStyles(), ...style }}
-      className={getCssClasses() + className}
+      style={{ ...getCustomStyles() }}
+      className={getCssClasses() + (className ?? "")}
       disabled={disabled}
       {...props}
     >
