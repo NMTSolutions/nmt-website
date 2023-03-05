@@ -14,9 +14,15 @@
   align-items: center;
 }
 
+.nav-heading > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav-heading img {
-  height: 2rem;
-  width: 9rem;
+  height: 3rem;
+  width: 10rem;
 
   cursor: pointer;
 }

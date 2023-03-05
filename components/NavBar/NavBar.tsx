@@ -4,7 +4,7 @@ import { usePathname } from "next/navigation";
 
 import Image from "next/image";
 import Button from "../Button/Button";
-import NMTLogo from "@/assets/logo/nmt-logo-transparent.png";
+import NMTLogo from "@/assets/logo/nmt-logo.svg";
 import Link from "next/link";
 
 import "./navbar.css";
@@ -15,7 +15,9 @@ const NavBar = () => {
   return (
     <nav className="nav">
       <div className="nav-heading">
-        <Image src={NMTLogo} alt="NMT Solution" priority />
+        <a href="/">
+          <Image src={NMTLogo} alt="NMT Solution" priority />
+        </a>
       </div>
       <div className="nav-tabs">
         <Button variant="text" isActive={pathname === "/"}>
