@@ -1,4 +1,6 @@
 import React from "react";
+import Button from "../Button/Button";
+import TextField from "../TextField/TextField";
 import "./contact-us.css";
 
 const Contactus = () => {
@@ -18,6 +20,25 @@ const Contactus = () => {
           </a>
         </article>
       </div>
+      <section className="get-in-touch">
+        <h3>Get in touch</h3>
+        <span>Lets collaborate to expand your business</span>
+        <div className="name-group">
+          <TextField label="Full Name" required />
+          <TextField label="Business Email" required />
+        </div>
+        <div className="phone-group">
+          <TextField label="Country" required />
+          <TextField label="Phone" />
+        </div>
+        <TextField
+          label="Tell us about your application needs"
+          height="6rem"
+          placeholder="Tell us about your application needs"
+          variant="textarea"
+        />
+        <Button label="Contact us" />
+      </section>
     </section>
   );
 };

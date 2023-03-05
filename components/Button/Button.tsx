@@ -11,7 +11,6 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   width?: number | string;
   margin?: number | string;
   padding?: number | string;
-  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   children?: React.ReactNode;
 }
 
@@ -36,8 +35,9 @@ const Button = ({
   width,
   margin,
   padding,
-  onClick,
   children,
+  style,
+  className,
   ...props
 }: ButtonProps) => {
   const getCssClasses = () => {
@@ -77,10 +77,9 @@ const Button = ({
 
   return (
     <button
-      style={getCustomStyles()}
-      className={getCssClasses()}
-      onClick={onClick}
-      disabled={disabled ?? false}
+      style={{ ...getCustomStyles(), ...style }}
+      className={getCssClasses() + className}
+      disabled={disabled}
       {...props}
     >
       {children ? children : label}

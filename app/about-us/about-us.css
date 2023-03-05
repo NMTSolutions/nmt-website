@@ -14,23 +14,19 @@
   padding: 0 2rem;
 }
 
-.terms {
+.about-us {
   margin: 2rem 0;
   color: var(--secondary);
 }
 
-.terms section h1 {
-  margin: 2rem 0;
-
+.about-us > h1 {
   font-size: xx-large;
 }
 
-.terms section h4 {
-  font-size: large;
+.about-us > * {
+  margin: 2rem 0;
 }
 
-.terms section h3 a {
-  text-decoration: underline;
-
-  color: var(--accent);
+.about-us .contact-us div h1 {
+  color: var(--secondary);
 }

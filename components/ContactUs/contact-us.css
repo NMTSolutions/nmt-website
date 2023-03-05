@@ -1,7 +1,9 @@
 .contact-us {
-  margin: 2rem 0;
+  margin: 6rem 0 2rem;
 
   display: flex;
+  justify-content: start;
+  align-items: start;
 
   color: var(--secondary);
 }
@@ -34,4 +36,22 @@
 
 .contact-us article a:hover {
   text-decoration: underline;
+}
+
+.get-in-touch {
+  padding: 2rem;
+
+  width: 50%;
+
+  background: var(--dark-inactive);
+  border-radius: 2rem;
+
+  box-shadow: 0 2px 8px var(--dark);
+}
+
+.get-in-touch .name-group,
+.get-in-touch .phone-group {
+  display: flex;
+
+  gap: 2rem;
 }

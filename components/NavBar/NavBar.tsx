@@ -17,9 +17,11 @@ const NavBar = () => {
         <Button variant="text">
           <Link href="/">Home</Link>
         </Button>
-        <Button variant="text">About us</Button>
         <Button variant="text">
-          <a href="#our-expertise">Services</a>
+          <Link href="/about-us"> About us</Link>
+        </Button>
+        <Button variant="text">
+          <a href="/#our-expertise">Services</a>
         </Button>
         <Button variant="text">
           <a href="/#contact-us">Contact</a>

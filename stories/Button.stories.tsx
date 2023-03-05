@@ -8,7 +8,7 @@ export default {
     disabled: {
       control: { type: "boolean" },
     },
-    background: {
+    color: {
       control: { type: "color" },
     },
     height: {
