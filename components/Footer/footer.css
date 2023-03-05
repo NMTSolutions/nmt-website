@@ -1,11 +1,5 @@
 .footer {
-  margin: 1rem auto;
-  padding: 0 2rem;
   padding-top: 1rem;
-
-  max-width: 90rem;
-
-  width: 100vw;
 
   color: var(--secondary);
   font-size: small;

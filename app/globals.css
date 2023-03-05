@@ -12,6 +12,12 @@
 
   --disabled: rgb(206, 206, 206);
   --disabled-text: rgb(167, 167, 167);
+
+  --shadow: rgb(128, 128, 128, 0.4);
+
+  --dark: rgb(0, 0, 0);
+  --dark-active: rgb(0, 0, 0, 0.4);
+  --dark-inactive: rgb(0, 0, 0, 0.2);
 }
 
 * {
@@ -30,50 +36,11 @@
   overflow: scroll;
 }
 
-.banner {
-  margin: 2rem auto;
-
-  display: flex;
-
+.sub-container {
   max-width: 90rem;
-}
 
-.banner > * {
-  margin: 2rem;
-  width: 50%;
-  height: 30rem;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.banner > :nth-child(1) {
-  align-items: start;
-}
-
-.banner-heading div:nth-child(1) {
-  color: var(--accent);
-  font-size: xx-large;
-
-  margin-bottom: 1rem;
-}
-
-.banner-heading div:nth-child(2) {
-  color: var(--warning);
-  font-size: medium;
-
-  margin-bottom: 1rem;
-}
-
-.banner-heading .banner-actions > * + button {
-  margin-left: 1rem;
-}
-
-.banner-graphic img {
-  height: 100%;
-  width: 100%;
+  margin: 2rem auto 1rem;
+  padding: 0 2rem;
 }
 
 .no-scrollbar::-webkit-scrollbar {

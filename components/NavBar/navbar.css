@@ -1,8 +1,5 @@
 .nav {
-  margin: 2rem auto;
-  padding: 0 2rem;
-
-  max-width: 90rem;
+  width: 100%;
 
   display: flex;
   justify-content: space-between;

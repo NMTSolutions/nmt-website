@@ -7,13 +7,16 @@
   overflow: scroll;
 }
 
-.privacy-policy {
-  margin: 2rem auto;
-  padding: 2rem;
-
-  color: var(--secondary);
-
+.sub-container {
   max-width: 90rem;
+
+  margin: 2rem auto 1rem;
+  padding: 0 2rem;
+}
+
+.privacy-policy {
+  margin: 2rem 0;
+  color: var(--secondary);
 }
 
 .privacy-policy section h1 {

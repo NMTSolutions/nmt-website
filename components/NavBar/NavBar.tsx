@@ -18,9 +18,11 @@ const NavBar = () => {
           <Link href="/">Home</Link>
         </Button>
         <Button variant="text">About us</Button>
-        <Button variant="text">Services</Button>
         <Button variant="text">
-          <Link href="#contact-us">Contact</Link>
+          <a href="#our-expertise">Services</a>
+        </Button>
+        <Button variant="text">
+          <a href="/#contact-us">Contact</a>
         </Button>
       </div>
       <div className="nav-account-actions">
