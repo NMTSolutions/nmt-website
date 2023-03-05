@@ -108,3 +108,7 @@
 .btn-outlined:disabled:hover {
   background: transparent;
 }
+
+.btn-active {
+  background: var(--dark-inactive);
+}

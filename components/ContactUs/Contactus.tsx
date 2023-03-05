@@ -37,7 +37,8 @@ const Contactus = () => {
           placeholder="Tell us about your application needs"
           variant="textarea"
         />
-        <Button label="Contact us" />
+        <div className="data-security">We never share your data.</div>
+        <Button label="Contact us" width="100%" height="2.5rem" />
       </section>
     </section>
   );

@@ -33,7 +33,7 @@
   margin-bottom: 1rem;
 }
 
-.banner-heading .banner-actions > * + button {
+.banner-heading .banner-actions > * + a {
   margin-left: 1rem;
 }
 

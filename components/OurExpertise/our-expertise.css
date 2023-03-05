@@ -59,7 +59,5 @@
 }
 
 .our-expertise .expertise-card:hover .description {
-  display: block;
-
   color: var(--accent);
 }

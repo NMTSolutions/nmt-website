@@ -11,6 +11,7 @@ export interface ButtonProps extends React.HTMLAttributes<HTMLButtonElement> {
   width?: number | string;
   margin?: number | string;
   padding?: number | string;
+  isActive?: boolean;
   children?: React.ReactNode;
 }
 
@@ -38,11 +39,13 @@ const Button = ({
   children,
   style,
   className,
+  isActive = false,
   ...props
 }: ButtonProps) => {
   const getCssClasses = () => {
     return (
-      `btn btn-${variant} btn-${viewSize}` + (disabled ? " btn-disabled" : "")
+      `btn btn-${variant} btn-${viewSize}${isActive ? " btn-active" : ""}` +
+      (disabled ? " btn-disabled" : "")
     );
   };
 

@@ -1,5 +1,5 @@
 .contact-us {
-  margin: 6rem 0 2rem;
+  margin: 4rem 0;
 
   display: flex;
   justify-content: start;
@@ -54,4 +54,9 @@
   display: flex;
 
   gap: 2rem;
+}
+.data-security {
+  margin-bottom: 0.5rem;
+
+  text-align: center;
 }
