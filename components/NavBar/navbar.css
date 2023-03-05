@@ -61,12 +61,12 @@
   align-items: center;
 }
 
-.terms > input[type="checkbox"] {
+.signup-form .terms > input[type="checkbox"] {
   height: 3rem;
 
   cursor: pointer;
 }
-.terms > label {
+.signup-form .terms > label {
   color: var(--secondary);
 
   cursor: pointer;
