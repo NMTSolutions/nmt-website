@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer/Footer";
+import NavBar from "@/components/NavBar/NavBar";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -18,7 +20,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        <main className="container no-scrollbar">
+          <div className="sub-container">
+            <NavBar />
+            {children}
+            <Footer />
+          </div>
+        </main>
+      </body>
     </html>
   );
 }

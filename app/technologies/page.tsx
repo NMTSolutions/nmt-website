@@ -1,25 +1,17 @@
-import NavBar from "@/components/NavBar/NavBar";
 import Image from "next/image";
 
 import techOfferings from "@/tech_offerings/tech_offerings";
 
 import "./technologies.css";
-import Footer from "@/components/Footer/Footer";
 
 const Technologies = () => {
   return (
-    <main className="container no-scrollbar">
-      <div className="sub-container">
-        <NavBar />
-        <section className="technologies">
-          <h1>Our Technologies</h1>
-          {techOfferings.map((tech) => (
-            <TechGroup key={tech.name} {...tech} />
-          ))}
-        </section>
-        <Footer />
-      </div>
-    </main>
+    <section className="technologies">
+      <h1>Our Technologies</h1>
+      {techOfferings.map((tech) => (
+        <TechGroup key={tech.name} {...tech} />
+      ))}
+    </section>
   );
 };
 

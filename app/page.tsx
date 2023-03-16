@@ -8,16 +8,14 @@ import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   return (
-    <main className="container no-scrollbar">
-      <div className="sub-container">
-        <NavBar />
-        <Banner />
-        <OurExpertise />
-        <UpcomingProducts />
-        <Technologies />
-        <Contactus />
-        <Footer />
-      </div>
-    </main>
+    <>
+      {/* <NavBar /> */}
+      <Banner />
+      <OurExpertise />
+      <UpcomingProducts />
+      <Technologies />
+      <Contactus />
+      {/* <Footer /> */}
+    </>
   );
 }
